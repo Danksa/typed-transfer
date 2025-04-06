@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "module": "NodeNext",
+        "moduleResolution": "nodenext",
+        "strict": true,
+        "rootDir": ".",
+        "outDir": "dist",
+        "incremental": true,
+        "tsBuildInfoFile": ".tsbuildinfo"
+    },
+    "include": ["src", "test"],
+    "exclude": ["node_modules", "dist"]
+}
