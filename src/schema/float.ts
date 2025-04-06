@@ -4,11 +4,5 @@ import { Schema } from './schema.js';
 export type FloatSchema = Schema<number>;
 
 export const Float = (): FloatSchema => {
-    return Instance;
+    return FloatSerdes.Instance as FloatSchema;
 };
-
-const Instance: FloatSchema = {
-    serializedSize: (value) => FloatSerdes.Instance.serializedSize(value),
-    serialized: (value) => FloatSerdes.Instance.serialized(value),
-    deserialized: (value) => FloatSerdes.Instance.deserialized(value)
-} as FloatSchema;

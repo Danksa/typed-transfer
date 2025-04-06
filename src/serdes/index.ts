@@ -1,3 +1,4 @@
+export * from './array-serdes.js';
 export * from './double-serdes.js';
 export * from './float-serdes.js';
 export * from './int32-serdes.js';

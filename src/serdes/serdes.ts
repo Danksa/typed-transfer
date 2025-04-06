@@ -1,5 +1,5 @@
 export type Serdes<T> = {
-    serialized: (value: T) => ArrayBuffer;
-    deserialized: (value: ArrayBuffer) => T;
-    serializedSize: (value: T) => number;
+    readonly serialized: (value: T) => ArrayBuffer;
+    readonly deserialized: (value: ArrayBuffer) => T;
+    readonly serializedSize: (value: T) => number;
 };
